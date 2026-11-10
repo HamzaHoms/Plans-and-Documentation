@@ -1,0 +1,461 @@
+{
+  "main": {
+    "id": "47e380e7140eae51",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c9d2a04f2c55769",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7834aa873365fa8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Project Stack-up and Extended Stack-up.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Project Stack-up and Extended Stack-up"
+            }
+          },
+          {
+            "id": "c9bc70c3233da7b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Project Stack-up and Extended Stack-up.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Project Stack-up and Extended Stack-up"
+            }
+          },
+          {
+            "id": "f4eff2a532051592",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Project Stack-up and Extended Stack-up.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Project Stack-up and Extended Stack-up"
+            }
+          },
+          {
+            "id": "592a1269ec78fb27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardware Layer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Hardware Layer"
+            }
+          },
+          {
+            "id": "0e6fba63fe26d294",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Presentation 1 MECA490.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Presentation 1 MECA490"
+            }
+          },
+          {
+            "id": "31295af71d0a99a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Systems & Low-Level Planning/Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Systems"
+            }
+          },
+          {
+            "id": "2caab8fe89837074",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Systems & Low-Level Planning/Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Systems"
+            }
+          },
+          {
+            "id": "f365e1a0e4924c0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Systems & Low-Level Planning/UART Controller.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UART Controller"
+            }
+          },
+          {
+            "id": "d701ca8af7a35281",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Systems & Low-Level Planning/I2C Controller.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "I2C Controller"
+            }
+          },
+          {
+            "id": "167c21abd426cd3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Systems & Low-Level Planning/Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Systems"
+            }
+          },
+          {
+            "id": "e34a5d11eb6792ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Systems & Low-Level Planning/Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Systems"
+            }
+          },
+          {
+            "id": "ca4c5b4fb8d718ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Systems & Low-Level Planning/Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Systems"
+            }
+          },
+          {
+            "id": "ceddb02166ab1820",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Systems & Low-Level Planning/Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Systems"
+            }
+          },
+          {
+            "id": "c4e76307c40347ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Systems & Low-Level Planning/Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Systems"
+            }
+          },
+          {
+            "id": "b494ab1d01ab0aec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Systems & Low-Level Planning/Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Systems"
+            }
+          },
+          {
+            "id": "5df552835d216560",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Engineer's Logbook/Design Choices and Outlines.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Design Choices and Outlines"
+            }
+          },
+          {
+            "id": "249b09927184ca0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "energy_systems_finance_practice_exam.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "energy_systems_finance_practice_exam"
+            }
+          }
+        ],
+        "currentTab": 16
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f41f0db2f1240e56",
+    "type": "split",
+    "children": [
+      {
+        "id": "b546ccd40e3cf707",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "988fe23adaaeb0e8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "45574e379670f25a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "daed409172a228b2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0b7c482b60864922",
+    "type": "split",
+    "children": [
+      {
+        "id": "a1e17220626941ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a5935c2c6cd383dc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Hardware Layer.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Hardware Layer"
+            }
+          },
+          {
+            "id": "d3cf7d3866eed934",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Hardware Layer.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Hardware Layer"
+            }
+          },
+          {
+            "id": "d5c8d864f5dd1de4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "4f866b257f9a271b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "ab535cedad3210f7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Hardware Layer.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Hardware Layer"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "249b09927184ca0d",
+  "lastOpenFiles": [
+    "Systems & Low-Level Planning/SX-1268 Handler.md",
+    "energy_systems_finance_practice_exam.md",
+    "Systems & Low-Level Planning/USB Controller.md",
+    "Connections and Pins.md",
+    "Systems & Low-Level Planning/UART Controller.md",
+    "Systems & Low-Level Planning/Systems.md",
+    "Introductory.pdf",
+    "Systems & Low-Level Planning/I2C Controller.md",
+    "Systems & Low-Level Planning/EEPROM Handler.md",
+    "Systems & Low-Level Planning/High-Level COM Controller.md",
+    "Systems & Low-Level Planning/Simple File System.md",
+    "Systems & Low-Level Planning/Queue and Routing Logic.md",
+    "Special Functions Pseudo Code/_SX68_CmdTXRX.md",
+    "Special Functions Pseudo Code",
+    "Systems & Low-Level Planning/LUA Engine.md",
+    "Engineer's Logbook/Low-Level communication driver topology.md",
+    "Engineer's Logbook/Problems Faced.md",
+    "Engineer's Logbook/Design Choices and Outlines.md",
+    "To-Do for Code.md",
+    "Engineer's Logbook",
+    "where to find modules.md",
+    "UART System.md",
+    "Block Diagram - Hardware Layer.png",
+    "Presentation 1 MECA490.md",
+    "Systems & Low-Level Planning",
+    "ppt4EC2.tmp",
+    "pptB528.tmp",
+    "Slide Diagrams/5-4.2.drawio.png",
+    "ppt3028.tmp",
+    "pptC817.tmp",
+    "pptB662.tmp",
+    "ppt86A7.tmp",
+    "Presentation 1 Research Paper Notes.md",
+    "Slide Diagrams/6-3.2.drawio.png",
+    "Slide Diagrams/6-2.2.drawio.png",
+    "Slide Diagrams/6-1.2.drawio.png",
+    "Slide Diagrams/5-3.2.drawio.png",
+    "Slide Diagrams/5-2.2.drawio.png",
+    "Slide Diagrams/5-1.2.drawio.png",
+    "Slide Diagrams/3-2.2.drawio.png",
+    "Slide Diagrams/3-1.2.drawio.png",
+    "Project Stack-up and Extended Stack-up.md",
+    "Hardware Layer.md",
+    "Firmware Layer.md",
+    "Software Layer.md"
+  ]
+}

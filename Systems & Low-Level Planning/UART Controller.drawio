@@ -1,0 +1,111 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="4QuW5UunirxYykNHunpK">
+    <mxGraphModel dx="1021" dy="1748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="UART Reception Packet Mode" vertex="1">
+          <mxGeometry height="380" width="830" x="10" y="-190" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-4" edge="1" parent="3GLPQ8lked2GtyNaCXUK-1" source="3GLPQ8lked2GtyNaCXUK-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3GLPQ8lked2GtyNaCXUK-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-2" parent="3GLPQ8lked2GtyNaCXUK-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;UART_Open_DMA&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;*Called by user*&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;Resets the FIFOs and opens the DMA channel&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="70" y="113.75" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-6" edge="1" parent="3GLPQ8lked2GtyNaCXUK-1" source="3GLPQ8lked2GtyNaCXUK-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.014;entryY=0.388;entryDx=0;entryDy=0;entryPerimeter=0;" target="3GLPQ8lked2GtyNaCXUK-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-13" connectable="0" parent="3GLPQ8lked2GtyNaCXUK-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Idle Line Irq" vertex="1">
+          <mxGeometry relative="1" x="-0.4088" y="-1" as="geometry">
+            <mxPoint x="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-3" parent="3GLPQ8lked2GtyNaCXUK-1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="Wait for Incoming Data" vertex="1">
+          <mxGeometry height="80" width="70" x="345" y="118.75" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-17" edge="1" parent="3GLPQ8lked2GtyNaCXUK-1" source="3GLPQ8lked2GtyNaCXUK-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3GLPQ8lked2GtyNaCXUK-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="330" />
+              <mxPoint x="380" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-18" connectable="0" parent="3GLPQ8lked2GtyNaCXUK-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="On Successful Read" vertex="1">
+          <mxGeometry relative="1" x="-0.1538" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-5" parent="3GLPQ8lked2GtyNaCXUK-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;UART Idle line interrupt&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;called once an idle line condition is set,&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-if the idle line triggered with a read size greater than &quot;UART_DATA_MAX_SIZE&quot; the read automatically fails. And the packet is ignored&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-Reads the Received DMA data packet into the data FIFO and records the FIFO&#39;s read pointer and packet size at that time&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-If the FIFO is not free enough, the oldest packets are sacrificed to ensure only fresh data remains&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="312.5" width="160" x="630" y="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-9" parent="3GLPQ8lked2GtyNaCXUK-1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="DMA peripheral reading bytes" vertex="1">
+          <mxGeometry height="80" width="70" x="470" y="118.75" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-10" edge="1" parent="3GLPQ8lked2GtyNaCXUK-1" source="3GLPQ8lked2GtyNaCXUK-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3GLPQ8lked2GtyNaCXUK-9" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="-85" as="sourcePoint" />
+            <mxPoint x="640" y="-85" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-14" connectable="0" parent="3GLPQ8lked2GtyNaCXUK-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="DMA read" vertex="1">
+          <mxGeometry relative="1" x="-0.1015" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-19" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="UART Reception Stram Mode" vertex="1">
+          <mxGeometry height="430" width="830" x="10" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-20" edge="1" parent="3GLPQ8lked2GtyNaCXUK-19" source="3GLPQ8lked2GtyNaCXUK-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3GLPQ8lked2GtyNaCXUK-24" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-21" parent="3GLPQ8lked2GtyNaCXUK-19" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;UART_Open_DMA&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;*Called by user*&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;Resets the FIFOs and opens the DMA channel&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="70" y="113.75" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-22" edge="1" parent="3GLPQ8lked2GtyNaCXUK-19" source="3GLPQ8lked2GtyNaCXUK-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3GLPQ8lked2GtyNaCXUK-27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-23" connectable="0" parent="3GLPQ8lked2GtyNaCXUK-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="RXHalfCplt_IRQ" vertex="1">
+          <mxGeometry relative="1" x="-0.4088" y="-1" as="geometry">
+            <mxPoint x="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-24" parent="3GLPQ8lked2GtyNaCXUK-19" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="Wait for Incoming Data" vertex="1">
+          <mxGeometry height="80" width="70" x="345" y="118.75" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-33" edge="1" parent="3GLPQ8lked2GtyNaCXUK-19" source="3GLPQ8lked2GtyNaCXUK-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3GLPQ8lked2GtyNaCXUK-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="190" />
+              <mxPoint x="590" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-27" parent="3GLPQ8lked2GtyNaCXUK-19" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;UART Half Complete ISR&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;called once the first half of the buffer is filled&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-the filled chunk is transferred to the FIFO&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-If the FIFO is not empty enough the oldest data is sacrificed&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="172.5" width="160" x="650" y="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-28" parent="3GLPQ8lked2GtyNaCXUK-19" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="DMA peripheral reading bytes" vertex="1">
+          <mxGeometry height="80" width="70" x="470" y="118.75" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-29" edge="1" parent="3GLPQ8lked2GtyNaCXUK-19" source="3GLPQ8lked2GtyNaCXUK-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3GLPQ8lked2GtyNaCXUK-28" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="-85" as="sourcePoint" />
+            <mxPoint x="640" y="-85" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-30" connectable="0" parent="3GLPQ8lked2GtyNaCXUK-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="DMA read" vertex="1">
+          <mxGeometry relative="1" x="-0.1015" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-35" edge="1" parent="3GLPQ8lked2GtyNaCXUK-19" source="3GLPQ8lked2GtyNaCXUK-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3GLPQ8lked2GtyNaCXUK-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3GLPQ8lked2GtyNaCXUK-34" parent="3GLPQ8lked2GtyNaCXUK-19" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;UART Full Complete ISR&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;called once the second half of the buffer is filled&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-the filled chunk is transferred to the FIFO&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-If the FIFO is not empty enough the oldest data is sacrificed&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="172.5" width="160" x="650" y="245" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
