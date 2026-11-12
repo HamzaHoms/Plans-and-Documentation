@@ -232,21 +232,105 @@
             }
           },
           {
-            "id": "249b09927184ca0d",
+            "id": "2424c4b4e9a41c11",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "energy_systems_finance_practice_exam.md",
+                "file": "Engineer's Logbook/SX-1268 Driver Topology.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "energy_systems_finance_practice_exam"
+              "title": "SX-1268 Driver Topology"
+            }
+          },
+          {
+            "id": "75afca92cdd8706e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Engineer's Logbook/SX-1268 Driver Topology.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SX-1268 Driver Topology"
+            }
+          },
+          {
+            "id": "15356b449ded6cc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Engineer's Logbook/SX-1268 Driver Topology.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SX-1268 Driver Topology"
+            }
+          },
+          {
+            "id": "4d91f1b394fa3cea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Engineer's Logbook/SX-1268 Driver Topology.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SX-1268 Driver Topology"
+            }
+          },
+          {
+            "id": "3638649940722c65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Engineer's Logbook/SX-1268 Driver Topology.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SX-1268 Driver Topology"
+            }
+          },
+          {
+            "id": "667a99161dc2e19d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Engineer's Logbook/SX-1268 Driver Topology.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SX-1268 Driver Topology"
+            }
+          },
+          {
+            "id": "22e63c4efa7aec57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Engineer's Logbook/SX-1268 Driver Topology.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SX-1268 Driver Topology"
             }
           }
         ],
-        "currentTab": 16
+        "currentTab": 22
       }
     ],
     "direction": "vertical"
@@ -410,15 +494,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "249b09927184ca0d",
+  "active": "22e63c4efa7aec57",
   "lastOpenFiles": [
     "Systems & Low-Level Planning/SX-1268 Handler.md",
+    "Engineer's Logbook/SX-1268 Driver Topology.md",
+    "Block Diagram - Hardware Layer.png",
+    "Engineer's Logbook/Problems Faced.md",
+    "Engineer's Logbook/Major Test n1 Driver Throughput Testing.md",
+    "Major Test.md",
+    "Engineer's Logbook/Major Test.md",
+    "Engineer's Logbook/Major Test.md",
+    "Engineer's Logbook/Design Choices and Outlines.md",
+    "Engineer's Logbook/Low-Level communication driver topology.md",
+    "Firmware Layer.md",
+    "Hardware Layer.md",
+    "Introductory.pdf",
     "energy_systems_finance_practice_exam.md",
     "Systems & Low-Level Planning/USB Controller.md",
     "Connections and Pins.md",
     "Systems & Low-Level Planning/UART Controller.md",
     "Systems & Low-Level Planning/Systems.md",
-    "Introductory.pdf",
     "Systems & Low-Level Planning/I2C Controller.md",
     "Systems & Low-Level Planning/EEPROM Handler.md",
     "Systems & Low-Level Planning/High-Level COM Controller.md",
@@ -427,15 +522,9 @@
     "Special Functions Pseudo Code/_SX68_CmdTXRX.md",
     "Special Functions Pseudo Code",
     "Systems & Low-Level Planning/LUA Engine.md",
-    "Engineer's Logbook/Low-Level communication driver topology.md",
-    "Engineer's Logbook/Problems Faced.md",
-    "Engineer's Logbook/Design Choices and Outlines.md",
     "To-Do for Code.md",
     "Engineer's Logbook",
     "where to find modules.md",
-    "UART System.md",
-    "Block Diagram - Hardware Layer.png",
-    "Presentation 1 MECA490.md",
     "Systems & Low-Level Planning",
     "ppt4EC2.tmp",
     "pptB528.tmp",
@@ -444,7 +533,6 @@
     "pptC817.tmp",
     "pptB662.tmp",
     "ppt86A7.tmp",
-    "Presentation 1 Research Paper Notes.md",
     "Slide Diagrams/6-3.2.drawio.png",
     "Slide Diagrams/6-2.2.drawio.png",
     "Slide Diagrams/6-1.2.drawio.png",
@@ -452,10 +540,6 @@
     "Slide Diagrams/5-2.2.drawio.png",
     "Slide Diagrams/5-1.2.drawio.png",
     "Slide Diagrams/3-2.2.drawio.png",
-    "Slide Diagrams/3-1.2.drawio.png",
-    "Project Stack-up and Extended Stack-up.md",
-    "Hardware Layer.md",
-    "Firmware Layer.md",
-    "Software Layer.md"
+    "Slide Diagrams/3-1.2.drawio.png"
   ]
 }

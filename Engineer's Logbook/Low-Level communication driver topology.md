@@ -8,4 +8,8 @@ Why the split? Stream mode relies on "double buffering" where we use a circular 
 
 With that explanation, we can see that relying on the stream architecture means we lose the temporal factor and have to rely on software to parse packets, but getting the temporal factor means we lose the ability to stream data that is longer than the buffer.
 
+## Old choice
 I will choose topology #1, as it is the safest option for a system that is meant to operate continuously, the inefficiency of #2 and over-abstraction of #3 make #1 worth it, and the extra memory issue can be solved by using one buffer for both and resetting it at every switch between modes.
+
+## Currently in use
+I ended up choosing topology #2, using idle-line interrupts to packetize the incoming and outgoing data, like in topology #1, seems smart but it puts a timing constraint on the driver, incoming packets must be contiguous with a separation between and outgoing packets must have a separation delay between their transmits, which would necessitate a function that executes actively in a main loop or task for timing, instead of the default reactive nature of the driver. I implemented topology #2 in the latest version of the driver at https://github.com/HamzaHoms/Utils in the buffers.xx files. I will accelerate the packet parsing by making a specialized packet parsing state machine in the COM Handler
