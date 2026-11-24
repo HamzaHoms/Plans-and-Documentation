@@ -3,5 +3,6 @@ Node1 Errors:
 2) The above issue was causing an error in the error amount recording in the "errs" variable, fixing the above issue resolved it.
 3) An issue with the router controller only sending the data over to the SX-1268 every 32 packets happened too. It turned out that the Idle Line ISR was not enabled for the UART line, all I needed was to add enable the interrupt with HAL_UART_ENABLE_IT and clear it with HAL_UART_CLEAR_IDLEFLAG.
 4) An issue has risen in the script controller where it isn't reaching the final stage with the blinking LED. There turned out to be 2 issues affecting this, first off was simply that I had forgotten to set the RX DMA to circular mode which caused it to just stop copying bytes. And second was that in the 2nd while(1) loop I was using 4095-in_rc_trans and 4095-in_rc_err for the number of bytes to read when it should've been 4096-in_rc_trans and 4096-in_rc_err to read all 4096 bytes.
+5) USB TX path was messed up, both the USB_WriteTX function and the ISR implementation had so many pitfalls I'm surprised it lasted this long. Too many to count here, review github for them.
 
 As of 17/NOV/2026 the [[Major Test n1 Driver Throughput Testing]] for Node1 is finalized for test1, beyond that is incremental. 

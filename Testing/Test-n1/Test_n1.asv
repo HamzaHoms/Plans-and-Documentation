@@ -1,0 +1,44 @@
+clear all
+close all
+clc
+
+Tnode_4tx = readtable("1_1u32_15ms.csv");
+Tnode_252tx = readtable("1_63u32_120ms.csv");
+
+Tnode_4tx = table2array(Tnode_4tx);
+Tnode_252tx = table2array(Tnode_252tx);
+
+
+i_t = 1:1:1024;
+
+
+rc4tx_ts = Tnode_4tx(2051:3074, 1);
+
+rc252tx_ts = Tnode_252tx(2051:3074, 1);
+
+
+rc4tx_avg_delay = mean(diff(rc4tx_ts(1:650)));
+rc252tx_avg_delay = mean(diff(rc252tx_ts(1:650)));
+
+rc4tx_ideal_delay = 15488;
+rc252tx_ideal_delay = 194688;
+
+p1atx = [4, rc4tx_avg_delay];
+p2atx = [252, rc252tx_avg_delay];
+
+p1itx = [4, rc4tx_ideal_delay];
+p2i = [252, rc252tx_ideal_delay];
+
+
+[matx, batx] = FindLinear(p1a, p2a);
+[mitx, bitx] = FindLinear(p1i, p2i);
+
+matx
+batx
+mitx
+bitx
+
+
+plot(i_t, rc4_ts, 'r');
+hold on
+plot(i_t, rc252_ts, 'b');
